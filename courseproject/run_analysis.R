@@ -1,5 +1,16 @@
-##  set working diretctory to UCI HAR Dataset folder 
-wd_file_path <- getwd()
+## download and unzip dataset
+    if (!file.exists("data")) {
+        dir.create("data")
+    }
+    fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+    download.file(fileUrl,destfile="./data/UCIHARDataset.zip",method="curl")
+    list.files("./data")
+    unzip("./data/UCIHARDataset.zip", exdir="./data")
+
+
+
+##  set file path to UCI HAR Dataset folder 
+    wd_file_path <- file.path("./data")
 ##
 
 ##****************************************************************
@@ -79,9 +90,9 @@ wd_file_path <- getwd()
 ## 
 
     mean_std_only_column_list <- c(1:6,41:46,81:86,121:126,
-                                   161:166,201:202,227:228,
-                                   240:241,266:271,345:350,
-                                   424:429,504:504,516:517,
+                                   161:166,201:202,214:215,227:228,
+                                   240:241,253:254,266:271,345:350,
+                                   424:429,503:504,516:517,
                                    529:530,542:543,562:563)
     
     X_TRAIN_TEST_combined <- subset(X_TRAIN_TEST_combined, select=mean_std_only_column_list)
