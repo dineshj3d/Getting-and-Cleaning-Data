@@ -4,27 +4,17 @@
 
 ####Code Book
 
-#
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-#
-#
- 
+
+The Code Book details the tidy data set produced by the R script.
+
+
+
 ####ReadMe
 
 #
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-DescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribeDescribe
-#
-#
+The **ReadMe** file details the steps necessary to transform the raw data into a tidy data set.
+##
+##
 
 ####Raw data 
 
@@ -43,19 +33,25 @@ Triaxial Angular velocity from the gyroscope.
 A 561-feature vector with time and frequency domain variables.
 Its activity label.An identifier of the subject who carried out the experiment.
 
-See **README** for more information how this raw data set is transformed into a tidy dataset read for analysis
+See **ReadMe** for more information how this raw data set is transformed into a tidy dataset read for analysis
 
 
 #
 #
+
+The raw data set contains the following files:
 
 activity_labels.txt                         
 features_info.txt                           
 features.txt                                
 
-subject_test.txt     subject_train.txt                        
-X_test.txt           X_train.txt             
-y_test.txt           y_train.txt          
+subject_test.txt                        
+X_test.txt             
+y_test.txt 
+
+subject_train.txt                        
+X_train.txt             
+y_train.txt   
 
 ####R Script
 #
@@ -73,7 +69,11 @@ will be written to a file called **TRAIN_TEST_tidy_data.txt** (see sample submit
 #
 #
 
-The tidy dataset layout is outlines below.
+Each record contains the measurements on the mean and standard deviation for Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. Also included is the Triaxial Angular velocity from the gyroscope. An identifier of the subject who carried out the experiment and the activity activity 
+carried out is also included.
+
+
+The tidy dataset layout is outlined below.
 
 *  Subject
 *  Activity

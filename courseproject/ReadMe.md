@@ -3,9 +3,9 @@
 #
 #### Overview
 #
-The goal of this class project is to prepare tidy data that can be used for later analysis. The tidy dataset is created by means of a R script. Through a series of transformations steps detailed below, the R script reads the raw source data and creates a tidy dataset. Each step within the R script is outlined below. To create the tidy dataset, download tand run the script from the Github project site (see link below) to RStudio working directory.
+The goal of this class project is to prepare tidy data that can be used for later analysis. The tidy dataset is created by means of a R script. It merges the training and the test sets to create one data set and extracts only the measurements on the mean and standard deviation for each measurement.Through a series of transformations steps detailed below, the R script reads the raw source data and creates a tidy dataset. Each step within the R script is outlined below. To create the tidy dataset, download tand run the script from the Github project site (see link below) to RStudio working directory.
 
-For your reference, important details of the tidy dataset can be found the associated Codebook for this project.
+For your reference, important details of the tidy dataset can be found in associated **Codebook** for this project.
 
 The R script, Codebook and this Readme are hosted on Github at:
 
@@ -26,7 +26,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 #
 #
-##### Step 1 - Download the zipped *UCI HAR Dataset* to working directory
+##### Step 1 - Downloads the zipped *UCI HAR Dataset* to working directory
 #
 #
 #
